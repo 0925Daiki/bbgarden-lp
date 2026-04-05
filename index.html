@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="B.Bgarden｜英語×プログラミング×コーチングで子どもの成長を設計するオンラインフリースクール。不登校でも、世界にいける！" />
+  <title>B.Bgarden｜オンラインフリースクール</title>
+
+  <!-- Google Fonts: Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (アイコン用) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       0. ヘッダー
+  ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+
+      <!-- ロゴ -->
+      <a href="#" class="header-logo" aria-label="B.Bgarden トップへ">
+        <!-- ダミーロゴ：後から差し替え可能 -->
+        <img src="img/B.B garden_logo.png" alt="B.Bgarden ロゴ" width="160" height="48" />
+      </a>
+
+      <!-- デスクトップ ナビゲーション -->
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#service">B.Bgarden オンラインとは？</a></li>
+          <li><a href="#reasons">私たちの特徴</a></li>
+          <li><a href="#pricing">料金</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <!-- ヘッダーCTA -->
+      <a href="#contact" class="btn btn-primary header-cta">資料請求する</a>
+
+      <!-- ハンバーガーボタン（スマホ用） -->
+      <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- モバイルメニュー -->
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#service" class="mobile-nav-link">B.Bgarden オンラインとは？</a></li>
+        <li><a href="#reasons" class="mobile-nav-link">B.Bgardenの特徴</a></li>
+        <li><a href="#about" class="mobile-nav-link">代表と教室の紹介</a></li>
+        <li><a href="#learning" class="mobile-nav-link">学びと環境</a></li>
+        <li><a href="#schedule" class="mobile-nav-link">1日の流れ</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">料金</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link">お問い合わせ</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary mobile-menu-cta">資料請求する</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       ① ファーストビュー
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- ダミー背景画像：後から差し替え可能 -->
+    <div class="hero-bg" style="background-image: url('img/B.Bgarden_top.jpg');" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content container fade-in">
+      <h1 class="hero-catch">不登校でも、世界にいける！</h1>
+      <p class="hero-sub">英語×プログラミング×コーチングで子どもの"成長"を設計するオンラインフリースクール</p>
+
+      <!-- 特徴リスト -->
+      <ul class="hero-features">
+        <li class="hero-feature-item">
+          <span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+          東京都なら補助金利用で実質金額負担なしで利用可能
+        </li>
+        <li class="hero-feature-item">
+          <span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+          学校に行かなくても安心！出席認定サポートあり
+        </li>
+        <li class="hero-feature-item">
+          <span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+          オンラインとリアル教室でお子様の成長を支えます
+        </li>
+      </ul>
+
+      <!-- CTA 2箇所 -->
+      <div class="hero-cta-group">
+        <a href="#contact" class="btn btn-primary btn-lg">無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ② サービス説明
+  ============================================================ -->
+  <section class="service section-pad" id="service">
+    <div class="container">
+      <div class="service-inner fade-in">
+        <div class="service-text">
+          <h2 class="section-title">おうちに居ながら、世界がぐっと近くなる</h2>
+          <p class="service-desc">
+            B.Bgardenは、お子様の「好き」を将来の武器に変えるオンラインフリースクールです
+          </p>
+          <!-- <a href="#contact" class="btn btn-primary">無料相談はこちら</a> -->
+        </div>
+        <div class="service-image">
+           <img src="img/B.Bgarden_image.png" alt="B.Bgardenのサービスイメージ" width="560" height="380" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ③ 選ばれる理由
+  ============================================================ -->
+  <section class="reasons section-pad bg-light" id="reasons">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">B.Bgardenの特徴</h2>
+      <p class="section-lead text-center fade-in">私たちが選ばれる5つの理由</p>
+
+      <div class="reasons-grid">
+
+        <div class="reason-card fade-in">
+          <div class="reason-icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="reason-title">英語×プログラミング×コーチング</h3>
+          <p class="reason-desc">
+            <!-- ダミーテキスト：後から差し替え可能 -->
+            ネイティブ講師との英会話や、現役エンジニアによるプログラミング、そして対話を大切にするコーチングを組み合わせ、楽しみながら「自分で進む力」を育みます。
+          </p>
+        </div>
+
+        <div class="reason-card fade-in">
+          <div class="reason-icon" aria-hidden="true"><i class="fa-solid fa-school"></i></div>
+          <h3 class="reason-title">リアル教室へのスクーリング</h3>
+          <p class="reason-desc">
+            <!-- ダミーテキスト：後から差し替え可能 -->
+            三鷹市牟礼に「リアルな教室」があるから、オンラインだけで終わりません。月1回のスクーリング（登校日）で仲間と直接会って交流したり、先生と対面で相談したりすることもできます！。
+          </p>
+        </div>
+
+        <div class="reason-card fade-in">
+          <div class="reason-icon" aria-hidden="true"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+          <h3 class="reason-title">元高校教師の代表が運営</h3>
+          <p class="reason-desc">
+            <!-- ダミーテキスト：後から差し替え可能 -->
+            運営するのは、教育現場を熟知した元高校教師（中学校社会、高等学校地歴公民の教員免許保持）。現在はITエンジニアをしているので、学校の枠にとらわれず、ITの知識も活かしながら、お子様が安心して一歩を踏み出せる環境を設計しています！。
+          </p>
+        </div>
+
+        <div class="reason-card fade-in">
+          <div class="reason-icon" aria-hidden="true"><i class="fa-solid fa-plane"></i></div>
+          <h3 class="reason-title">海外留学がもっと身近に</h3>
+          <p class="reason-desc">
+            <!-- ダミーテキスト：後から差し替え可能 -->
+            希望者はフィリピン・セブ島への短期留学プログラムに参加可能。提携先の留学スクールで、本物の英語力が身につきます。親子留学も提供しているので、保護者の方も海外がもっと身近に感じられます。
+          </p>
+        </div>
+
+        <div class="reason-card fade-in">
+          <div class="reason-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
+          <h3 class="reason-title">安心の保護者サポート</h3>
+          <p class="reason-desc">
+            <!-- ダミーテキスト：後から差し替え可能 -->
+            お子様だけでなく、保護者の方へのサポートも充実。少人数制だからできる「通わせて終わりではない」サポートを受けられます。定期的な面談や情報共有で安心して私たちにお任せいただけます。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- <div class="text-center fade-in" style="margin-top: 2.5rem;">
+        <a href="#contact" class="btn btn-primary btn-lg">無料相談はこちら</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ④ 代表紹介
+  ============================================================ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">代表と教室の紹介</h2>
+
+      <div class="about-inner fade-in">
+        <div class="about-photo">
+          <!-- ダミー写真：後から差し替え可能 -->
+          <img src="img/B.Bgarden_DaikiEndo.png" alt="代表者の写真" width="320" height="400" loading="lazy" />
+        </div>
+
+        <div class="about-text">
+          <div class="about-name-block">
+            <p class="about-position">B.Bgarden フリースクール代表</p>
+            <!-- ダミー名前：後から差し替え可能 -->
+            <h3 class="about-name">遠藤 大樹（えんどう だいき）</h3>
+          </div>
+
+          <!-- ダミー経歴：後から差し替え可能 -->
+          <p class="about-bio">
+            元公立高校教師として10年以上の指導経験を持つ。教員を退職後、フィリピンセブ島に移住しエンジニア兼プログラミング講師として活動。教員・海外での経験を通して、「学校以外の学びの場」の必要性を痛感し、B.Bgardenフリースクールを設立。教育だけではなく、ビジネス・IT・グローバルな視点から教育を実践している。
+          </p>
+
+          <div class="about-tags">
+            <span class="tag"><i class="fa-solid fa-graduation-cap"></i> 元高校教師（10年以上）</span>
+            <span class="tag"><i class="fa-solid fa-certificate"></i> エンジニア・プログラミング講師</span>
+            <span class="tag"><i class="fa-solid fa-globe"></i> 海外在住経験（セブ島）</span>
+          </div>
+
+          <div class="about-classroom">
+            <h4 class="about-classroom-title"><i class="fa-solid fa-map-marker-alt"></i> リアル教室について</h4>
+            <img src="img/B.Bgarden_school.JPG" alt="代表者の写真" width="320" height="400" loading="lazy" style="margin-bottom: 1.5rem;" />
+            <p>東京都三鷹市牟礼に「B.Bgarden」があります。月1回のスクーリングでは、仲間と一緒に学び、発表し、交流する場を提供しています。井の頭公園の近くにスクールがあるので、外でのアクティビティも充実しています。私たちはオンラインでは得られないリアルなつながりを大切にしています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑤ 学びと環境
+  ============================================================ -->
+  <section class="learning section-pad bg-light" id="learning">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">学びと環境</h2>
+      <p class="section-lead text-center fade-in">B.Bgardenのカリキュラムは、単なる学習支援ではありません。お子様の「好き」を将来の武器に変えるための、ワクワクが詰まった「成長設計図」です。</p>
+
+      <!-- 3つの学びカード -->
+      <div class="learning-grid">
+        <div class="learning-card fade-in">
+          <div class="learning-card-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="learning-card-title">5教科対策</h3>
+          <p>主要5教科にも対応。元高校教師がお子様の「わからない」を一緒に解消しながら学習を進めていきます。</p>
+        </div>
+
+        <div class="learning-card fade-in">
+          <div class="learning-card-icon" aria-hidden="true"><i class="fa-solid fa-language"></i></div>
+          <h3 class="learning-card-title">英会話</h3>
+          <p>ネイティブ講師によるオンライン英会話と、日常会話から定期テスト対策まで対応したカリキュラム。楽しみながら英語を身につけます。</p>
+        </div>
+
+        <div class="learning-card fade-in">
+          <div class="learning-card-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+          <h3 class="learning-card-title">プログラミング</h3>
+          <p>Minecraft・Python・Webデザインなど、レベルに合わせて学べるプログラミング教育。作る喜びを通じて論理的思考力を育てます。</p>
+        </div>
+
+        <div class="learning-card fade-in">
+          <div class="learning-card-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="learning-card-title">コーチング</h3>
+          <p>目標設定・振り返り・自己肯定感の向上をサポートするコーチングセッション。お子様が自分の力で前に進める力を育てます。</p>
+        </div>
+
+      </div>
+
+      <!-- オンライン環境 -->
+      <div class="online-env fade-in">
+        <h3 class="online-env-title"><i class="fa-solid fa-wifi"></i> オンライン学習環境</h3>
+        <img src="img/B.Bgarden_online.jpg" alt="代表者の写真" width="320" height="400" loading="lazy" style="margin-bottom: 1.5rem;" />
+        <ul class="online-env-list">
+          <li><i class="fa-solid fa-check"></i> オンラインバーチャル環境でいつでも学習状況を確認</li>
+          <li><i class="fa-solid fa-check"></i> 常にリアル教室と繋がっているので孤独な気持ちにならない</li>
+          <li><i class="fa-solid fa-check"></i> 疑問があれば講師にいつでも聞ける</li>
+          <li><i class="fa-solid fa-check"></i> 保護者向けのLINEで学習進捗をいつでも共有</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑥ 1日の流れ
+  ============================================================ -->
+  <section class="schedule section-pad" id="schedule">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">1日の流れ</h2>
+      <p class="section-lead text-center fade-in">おうちにいながら充実した1日を</p>
+
+      <div class="timeline fade-in">
+
+        <div class="timeline-item">
+          <div class="timeline-time">10:00</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">ログイン・雑談タイム</h4>
+            <p>「おはよう！」から始まる、ゆるやかなつながりを大切にしています。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-time">10:30</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">個別・グループ学習</h4>
+            <p>学習アプリや先生のサポートで自分のペースで学習を進めます。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-time">11:00</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">英語・プログラミング学習</h4>
+            <p>英会話レッスンやプログラミング学習で、学校では学べないことを学んでいきます。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-time">12:00</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">昼休み</h4>
+            <p>ゆっくりランチタイム。バーチャル空間で仲間とおしゃべりしながら食事を取ります。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-time">13:00</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">自由学習・制作時間</h4>
+            <p>好きなテーマで作品制作や探究学習。「好き」を深める時間を私たちは大切にしています。</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-time">15:00</div>
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-title">振り返り</h4>
+            <p>今日の学びを記録し、次の目標を立てます。達成感を積み重ねることで自己肯定感を育みます。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑦ 料金
+  ============================================================ -->
+  <section class="pricing section-pad bg-light" id="pricing">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">料金プラン</h2>
+      <p class="section-lead text-center fade-in">週1日プランなら、補助金で実質負担なし！（※東京都限定）<br>まずはお気軽にご相談ください。</p>
+
+      <div class="pricing-grid fade-in">
+
+        <!-- プラン1 -->
+        <div class="pricing-card">
+          <div class="pricing-plan-name">週1日 プラン</div>
+          <div class="pricing-price">
+            <span class="price-amount">¥19,000</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> オンライン授業（週1回）</li>
+            <li><i class="fa-solid fa-check"></i> 英語 or プログラミング（選択）</li>
+            <li><i class="fa-solid fa-check"></i> 月1スクーリング参加</li>
+            <li><i class="fa-solid fa-check"></i> 保護者面談（月1回）</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> コーチング</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">このプランで相談する</a>
+        </div>
+
+        <!-- プラン2（おすすめ） -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge">おすすめ</div>
+          <div class="pricing-plan-name">週2日 プラン</div>
+          <div class="pricing-price">
+            <span class="price-amount">¥34,000</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> オンライン授業（週2回）</li>
+            <li><i class="fa-solid fa-check"></i> 英語＋プログラミング（両方）</li>
+            <li><i class="fa-solid fa-check"></i> 月1スクーリング参加</li>
+            <li><i class="fa-solid fa-check"></i> 保護者面談（月1回）</li>
+            <li><i class="fa-solid fa-check"></i> コーチング（週1回）</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">このプランで相談する</a>
+        </div>
+
+        <!-- プラン3 -->
+        <div class="pricing-card">
+          <div class="pricing-plan-name">週3日以上 プラン</div>
+          <div class="pricing-price">
+            <span class="price-amount">¥49,000</span>
+            <span class="price-unit">/月</span>
+          </div>
+          <!-- ダミーテキスト：後から差し替え可能 -->
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> オンライン授業（週3回以上）</li>
+            <li><i class="fa-solid fa-check"></i> 英語＋プログラミング（両方）</li>
+            <li><i class="fa-solid fa-check"></i> 月1スクーリング参加</li>
+            <li><i class="fa-solid fa-check"></i> 保護者面談（月2回）</li>
+            <li><i class="fa-solid fa-check"></i> コーチング（週1回）</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">このプランで相談する</a>
+        </div>
+
+      </div>
+
+      <!-- 料金セクション直下CTA -->
+      <div class="pricing-cta fade-in">
+        <p class="pricing-cta-note">※補助金申請・出席認定サポートがあります。実質負担が大幅に軽減され、お子様が学校に出席した扱いにすることが可能です。</p>
+        <a href="#contact" class="btn btn-primary btn-lg">無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑧ よくある質問
+  ============================================================ -->
+  <section class="faq section-pad" id="faq">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">よくあるご質問</h2>
+      <!-- <p class="section-lead text-center fade-in">保護者の方からよくいただくご質問にお答えします</p> -->
+
+      <div class="faq-list fade-in">
+
+        <!-- FAQ アイテム：後から差し替え可能 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>出席認定はどのように行われますか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>在籍している学校と連携し、B.Bgardenでの学習を出席として認定してもらうためのサポートを行います。学校との面談同行や書類作成のサポートも対応しております。詳しくはお気軽にご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>東京都の補助金はどのくらい受けられますか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>東京都の「フリースクール等利用者支援事業」により、授業料（利用料）に対して月額最大2万円の助成金を受け取ることができます。この制度を活用することで、授業料の自己負担額を実質0円に抑えてご利用いただくことが可能です。補助金の申請手続きについても丁寧にサポートいたします。詳細は無料相談でご確認ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>パソコンやタブレットは必要ですか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>はい、オンライン授業の受講にはパソコンまたはタブレット（カメラ・マイク付き）が必要です。インターネット環境もご用意ください。機器の選び方についてもご相談いただけます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>英語やプログラミングが全くできなくても大丈夫ですか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>もちろん大丈夫です！入会時にレベルチェックを行い、お子様の現在の状況に合わせた個別カリキュラムを作成します。完全初心者から始めているお子様も多く在籍しています。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>月1回のスクーリングは必須ですか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>スクーリングは参加を推奨していますが、体調やお子様の状況、住んでいる地域によっては欠席も可能です。私たちはお子様のペースを最優先に考えています。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>途中でプランを変更することはできますか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>はい、月単位でプランの変更が可能です。お子様の成長や状況の変化に合わせて柔軟に対応いたします。変更希望の場合は前月の10日までにご連絡ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>フリースクールの中で友だちができたりしますか？</span>
+            <span class="faq-icon" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-answer">
+            <p>はい、オンラインですが、生徒同士で協力して課題に取り組んだり、一緒に授業を受けたりするので、自然と友だちができるきっかけがあります！月1回のスクーリングで、リアルに友だちと交流することもできます。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div class="text-center fade-in" style="margin-top: 2.5rem;">
+        <a href="#contact" class="btn btn-primary btn-lg">まだ疑問がある方は無料相談へ</a>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- ============================================================
+       ⑨ CTA（中央強調）
+  ============================================================ -->
+  <section class="cta-section section-pad" id="cta">
+    <div class="container">
+      <div class="cta-box fade-in">
+        <h2 class="cta-title">まずは無料相談から<br>始めてみませんか？</h2>
+        <p class="cta-desc">お子様のこと、学校のこと、将来のこと。どんな小さな悩みでも構いません。代表自ら、丁寧にお話を聞かせていただきます。</p>
+        <a href="#contact" class="btn btn-primary btn-xl">無料相談はこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑩ 問い合わせ
+  ============================================================ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">お問い合わせ・資料請求</h2>
+      <p class="section-lead text-center fade-in">以下の中からお問い合わせしやすい形で<br>ご連絡ください！</p>
+
+      <!-- フォーム直前CTA -->
+      <div class="form-pre-cta fade-in">
+        <p><i class="fa-solid fa-phone"></i> 問い合わせ番号</p>
+        <a href="tel:070-9199-5119" class="form-tel-link">070-9199-5119</a>
+        <span class="form-tel-hours">（受付時間：平日 10:00〜18:00）</span>
+
+        <p><i class="fa-solid fa-envelope"></i> メールアドレス</p>
+        <a href="bc-contact@beancode.jp" class="form-tel-link">bc-contact@beancode.jp</a>
+
+        <p><i class="fa-solid fa-house"></i>公式ホームページ</p>
+        <a href="https://free-school.mitaka-eigo-bbgarden.com/" class="form-tel-link">こちらからご確認ください</a>
+
+        <p><i class="fa-brands fa-line"></i> 公式LINE</p>
+        <a href="https://lin.ee/nBcFuBG"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
+        <!-- <span class="form-tel-hours">（受付時間：平日 10:00〜18:00）</span> -->
+      </div>
+
+      <!-- <form class="contact-form fade-in" id="contact-form" novalidate> -->
+
+        <!-- 名前（必須） -->
+        <!-- <div class="form-group">
+          <label for="name" class="form-label">
+            お名前 <span class="required-badge">必須</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            placeholder="例：山田 花子"
+            required
+            autocomplete="name"
+          />
+          <span class="form-error" id="name-error" role="alert"></span>
+        </div> -->
+
+        <!-- 電話番号（任意） -->
+        <!-- <div class="form-group">
+          <label for="phone" class="form-label">
+            電話番号 <span class="optional-badge">任意</span>
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-input"
+            placeholder="例：090-1234-5678"
+            autocomplete="tel"
+          />
+          <span class="form-error" id="phone-error" role="alert"></span>
+        </div> -->
+
+        <!-- メール（必須） -->
+        <!-- <div class="form-group">
+          <label for="email" class="form-label">
+            メールアドレス <span class="required-badge">必須</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="例：hanako@example.com"
+            required
+            autocomplete="email"
+          />
+          <span class="form-error" id="email-error" role="alert"></span>
+        </div> -->
+
+        <!-- 質問（任意） -->
+        <!-- <div class="form-group">
+          <label for="message" class="form-label">
+            ご質問・ご要望 <span class="optional-badge">任意</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-input form-textarea"
+            placeholder="お子様の状況やご不明な点など、お気軽にご記入ください"
+            rows="5"
+          ></textarea>
+        </div> -->
+
+        <!-- プライバシーポリシー同意 -->
+        <!-- <div class="form-group form-group--checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <span class="checkbox-custom" aria-hidden="true"></span>
+            <a href="#" class="privacy-link">プライバシーポリシー</a>に同意する
+          </label>
+          <span class="form-error" id="privacy-error" role="alert"></span>
+        </div> -->
+
+        <!-- 送信ボタン -->
+        <!-- <div class="form-submit">
+          <button type="submit" class="btn btn-primary btn-xl btn-block" id="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> 無料相談・資料請求する
+          </button>
+        </div>
+
+      </form> -->
+
+      <!-- 送信完了メッセージ（JS で表示） -->
+      <!-- <div class="form-success" id="form-success" hidden>
+        <i class="fa-solid fa-circle-check"></i>
+        <p>お問い合わせありがとうございます。<br>2営業日以内にご連絡いたします。</p>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑪ アクセス
+  ============================================================ -->
+  <section class="access section-pad bg-light" id="access">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">アクセス</h2>
+
+      <div class="access-inner fade-in">
+        <div class="access-info">
+          <dl class="access-dl">
+            <dt><i class="fa-solid fa-map-marker-alt"></i> 住所</dt>
+            <dd>〒181-0002 東京都三鷹市牟礼６丁目１８−７</dd>
+
+            <dt><i class="fa-solid fa-phone"></i> 代表番号</dt>
+            <dd><a href="tel:0422-26-7046">0422-26-7046</a>（平日 10:00〜18:00）</dd>
+
+            <!-- <dt><i class="fa-solid fa-envelope"></i> メール</dt>
+            <dd><a href="mailto:info@bbgarden.example.com">info@bbgarden.example.com</a></dd> -->
+
+            <!-- <dt><i class="fa-brands fa-line"></i> LINE</dt>
+            <dd><a href="#" target="_blank" rel="noopener noreferrer">公式LINEはこちら</a></dd> -->
+
+            <dt><i class="fa-brands fa-instagram"></i> Instagram</dt>
+            <dd><a href="https://www.instagram.com/b.bgarden/" target="_blank" rel="noopener noreferrer">@b.bgarden</a></dd>
+
+            <dt><i class="fa-solid fa-book-open"></i> 公式ブログ</dt>
+            <dd><a href="https://note.com/bbgarden_note" target="_blank" rel="noopener noreferrer">B.Bgarden フリースクール</a></dd>
+          </dl>
+        </div>
+
+        <div class="access-map">
+          <!-- 地図プレースホルダー：後からGoogle Maps埋め込みに差し替え可能 -->
+          <div class="map-placeholder" aria-label="地図プレースホルダー">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            <p>お気軽に教室までお越しください</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8137.87806167006!2d139.56931120827397!3d35.693799624588245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee2dc0f4bfa5%3A0xacfdacafcc501339!2zQi5CIGdhcmRlbuOAkOS4iem3ueW4gueJn-ekvC_oi7Hoqp7mlZnlrqQv44OV44Oq44O844K544Kv44O844OrL-ODl-ODreOCsOODqeODn-ODs-OCsOaVmeWupOOAkQ!5e0!3m2!1sja!2sjp!4v1775356400630!5m2!1sja!2sjp" width="320" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑫ 代表メッセージ
+  ============================================================ -->
+  <section class="message section-pad" id="message-section">
+    <div class="container">
+      <h2 class="section-title text-center fade-in">代表メッセージ</h2>
+
+      <div class="message-inner fade-in">
+        <!-- <div class="message-photo">
+          <img src="https://placehold.co/200x200/c8e6c9/4a7c59?text=代表" alt="代表者の写真" width="200" height="200" loading="lazy" />
+          <p class="message-photo-name">山田 太郎</p>
+          <p class="message-photo-title">B.Bgarden 代表</p>
+        </div> -->
+
+        <div class="message-text">
+          <p>
+            私はこれまで、高校教員として9年間、そしてプログラミング講師として、多くの子どもたちと向き合ってきました。
+          </p>
+          <p>
+            教壇に立っていた頃、何よりも辛かったのは、学校という一つの枠組みに馴染めず、本来持っているはずの素晴らしい才能や自信を失っていく子たちの姿を見ることでした。「今の学校がすべてじゃないよ」と心の中で叫びながらも、当時の私には新しい選択肢を手渡してあげることができませんでした。
+          </p>
+          <p>
+            その後、ITの世界へ飛び込み、さらにフィリピンのセブ島でプログラミングを教える経験を通して、確信したことがあります。それは、「環境さえ変われば、子どもは劇的に変わる」ということです。
+          </p>
+          <p>
+            B.Bgardenは、単なる「学校の代わり」ではありません。<br>
+            ・ネイティブ講師と笑い合う英会話で、世界が身近にあることを知る。<br>
+            ・PythonやAIを使ったものづくりで、自分のアイデアを形にする手応えを掴む。<br>
+            ・1on1のコーチングで、自分だけの「できた！」を一緒に喜ぶ。<br>
+          </p>
+          <p>
+            そして、三鷹のリアル教室やセブ島留学の機会を通して、「自分を認めてくれる居場所は、世界中に広がっている」と肌で感じる。こうした「小さな成功体験」を、一人ひとりの歩幅に合わせて届けていきたいと考えています。
+          </p>
+          <p><b>
+            「学校に行けなくても、世界には行ける。」
+          </b></p>
+          <p>
+            子どもたちが、誰かの決めた正解ではなく、自分の人生を自分の意志で選んでいけるようになる。そのための「最初のトビラ」を、ここB.Bgardenで一緒に開きましょう！
+          </p>
+
+          <div class="message-signature">
+            <img src="img/B.Bgarden_name.png" alt="代表署名" width="300" height="250" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ⑬ フッター
+  ============================================================ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <!-- フッターロゴ -->
+        <div class="footer-logo-area">
+          <img src="img/B.B garden_logo.png" alt="B.Bgarden ロゴ" width="140" height="42" loading="lazy" />
+          <p class="footer-tagline">【英会話教室/フリースクール/プログラミング教室】</p>
+        </div>
+
+        <!-- フッターナビ -->
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <ul class="footer-nav-list">
+            <li><a href="#service">B.Bgarden オンラインとは？</a></li>
+            <li><a href="#reasons">B.Bgardenの特徴</a></li>
+            <li><a href="#about">代表と教室の紹介</a></li>
+            <li><a href="#pricing">学びと環境</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="https://free-school.mitaka-eigo-bbgarden.com/privacypolicy">プライバシーポリシー</a></li>
+            <!-- <li><a href="#">特定商取引法に基づく表記</a></li> -->
+          </ul>
+        </nav>
+
+        <!-- SNS -->
+        <div class="footer-sns">
+          <a href="https://lin.ee/OJjbHto" class="sns-link" aria-label="LINE公式アカウント" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-line"></i></a>
+          <a href="https://www.instagram.com/b.bgarden/" class="sns-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <!-- <a href="#" class="sns-link" aria-label="X（旧Twitter）" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a> -->
+        </div>
+
+      </div>
+
+      <div class="footer-copy">
+        <!-- ダミーコピーライト：後から差し替え可能 -->
+        <p>&copy; 2026 B.Bgarden オンラインフリースクール</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       スマホ固定CTA（画面下部）
+  ============================================================ -->
+  <div class="fixed-cta" id="fixed-cta" aria-label="固定CTAバー">
+    <a href="#contact" class="btn btn-primary fixed-cta-btn">
+      <i class="fa-solid fa-paper-plane"></i> 無料相談はこちら
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

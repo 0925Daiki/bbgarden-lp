@@ -1742,7 +1742,7 @@ button {
 
   .pricing-card--featured {
     transform: none;
-    order: -1;
+    order: 0;
   }
 
   .pricing-card--featured:hover {
